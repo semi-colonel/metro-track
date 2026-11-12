@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pune Metro Tracker</title>
+<link rel="stylesheet" href="style.css">
+<main>
+<header><span>PUNE METRO</span><h1>Train tracker</h1><p>Explore the Purple and Aqua lines.</p></header>
+<section class="toolbar" aria-label="Tracker settings">
+<label>Line <select id="line"><option value="purple">Purple · PCMC to Swargate</option><option value="aqua">Aqua · Vanaz to Ramwadi</option></select></label>
+<label><input id="demo" type="checkbox"> Show simulated trains</label>
+</section>
+<p id="status" role="status"></p>
+<div id="board">
+<section><h2>Stations</h2><ol id="stations"></ol></section>
+<section><h2>Train positions</h2><div id="positions"></div></section>
+</div>
+<footer>Independent project · <a href="https://www.punemetrorail.org/projectprofile.aspx?lang=en-US">Official Pune Metro route information</a></footer>
+</main>
+<script type="module" src="app.mjs"></script>
+</html>
